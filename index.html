@@ -14,23 +14,27 @@
         <div class="container-text">
             <h1 class="title">Es tu momento</h1>
             <h3 class="subtitle">Aprende cómo negociar con bienes raíces</h3>
-            <form id="form" action="https://formsubmit.io/send/wilalzatep@gmail.com" method="POST">
+            <form id="form">
                 <!-- action="submit" -->
                 <input 
+                    id="inpName"
                     type="text" 
                     placeholder="Nombre" 
                     name="name" 
                     minlength="2" 
                     maxlength="20"
-                    required >
+                    autocomplete="on"
+                     >
                 <input 
+                    id="inpEmail"
                     type="email" 
                     placeholder="Correo electrónico" 
                     name="email" 
                     minlength="2" 
                     maxlength="50"
-                    required >
-                <button type="submit" class="cta">Registrarme!</button>
+                    autocomplete="on"
+                     >
+                <button type="submit" class="cta" id="btn">Registrarme!</button>
             </form>
         </div>
         <div class="container-image">
@@ -43,6 +47,6 @@
 
 
         <!--    Ver video min 15:00      -->
-
+    <script src="script.js"></script>
 </body>
 </html>
