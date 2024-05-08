@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,40 +13,43 @@
     <main class="container">
         <div class="container-text">
             <h1 class="title">Es tu momento</h1>
-            <h3 class="subtitle">Aprende cómo negociar con bienes raíces</h3>
+            <h3 class="subtitle">Regístrate para aprender cómo negociar con <strong>bienes&nbsp;raíces</strong></h3>
             <form id="form">
                 <!-- action="submit" -->
                 <input 
-                    id="inpName"
+                    id="iName"
                     type="text" 
                     placeholder="Nombre" 
                     name="name" 
                     minlength="2" 
                     maxlength="20"
                     autocomplete="on"
-                     >
+                    required
+                    title="Por favor, rellena este campo." 
+                    oninvalid="this.setCustomValidity('Ingresa tu nombre para continuar')" 
+                    oninput="this.setCustomValidity('')"
+                    >
                 <input 
-                    id="inpEmail"
+                    id="iEmail"
                     type="email" 
                     placeholder="Correo electrónico" 
                     name="email" 
                     minlength="2" 
                     maxlength="50"
                     autocomplete="on"
-                     >
+                    required 
+                    title="Por favor, rellena este campo." 
+                    oninvalid="this.setCustomValidity('Ingresa tu correo electrónico para continuar')" 
+                    oninput="this.setCustomValidity('')"
+                    >
                 <button type="submit" class="cta" id="btn">Registrarme!</button>
             </form>
         </div>
         <div class="container-image">
             <img class="img" src="img/img-real-estate.svg" alt="real-estate">
         </div>
-        <!--
-            <img class="wave" src="img/wave.svg" alt="">
-        -->
     </main>
 
-
-        <!--    Ver video min 15:00      -->
     <script src="script.js"></script>
 </body>
 </html>

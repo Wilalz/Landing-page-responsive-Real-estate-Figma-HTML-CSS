@@ -1,5 +1,10 @@
 # Responsive landing page - Real estate
-Creacion de una landing page para un servicio de bienes raices (real estate). Desarrollada con Figma para diseñar y definir estilos, finalmente implementada con HTML y CSS de modo responsive para 3 dispositivos (desktop, tablet, mobile)
+Creacion de una landing page para un servicio de bienes raices (real estate). Diseñada con Figma e implementada con HTML, CSS y JavaScript.  Incluye:\
+Manejo del DOM\
+Validación de formularios\
+Responsive para 3 dispositivos (desktop, tablet, mobile)\
+Animación CSS\
+Inspiración [AlexCG Design](https://www.youtube.com/watch?v=cFV2F_XWZ_o&list=PLCSd_jI0_LcojYis3p50pamn-ZcWpofCU)
 
 ## Ver la presentación!
 [Figma -> Real estate landing page](https://www.figma.com/file/ANDLj4Qs8hGobsseviWl9f/Landing-page-Real-Estate?type=design&node-id=0%3A1&mode=dev)
