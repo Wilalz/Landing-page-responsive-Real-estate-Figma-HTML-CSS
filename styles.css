@@ -1,3 +1,9 @@
+:root {
+    --color-wil: #0072bb;
+    --color-wil-light: hsl(203, 100%, 47%);
+    --color-wil-dark: hsl(203, 100%, 27%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +14,9 @@ body {
     font-family: 'Raleway', sans-serif;
     background: linear-gradient(130deg, #16A085 0%, #F4D03F 100%);
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -21,14 +30,16 @@ body {
 /* text */
 
 .container-text {
-    flex-basis: 50%;
+    flex-basis: 45%;
     padding: 40px;
     padding-left: 60px;
     /* overflow: hidden; */
     overflow: visible;
     color: white;
-
+    margin-bottom: 80px;
 }
+
+
 
 .title {
     font-size: 7rem;
@@ -94,12 +105,12 @@ input:-webkit-autofill:active {
 /* image */
 
 .container-image {
-    flex-basis: 50%;
+    flex-basis: 45%;
     position: relative;
     z-index: 1;
     text-align: center;
     overflow: hidden;
-    padding: 40px;
+    padding: 30px;
     padding-right: 60px;
 }
 
@@ -113,14 +124,48 @@ input:-webkit-autofill:active {
 /*  animation  */
 @keyframes illustrationAnimate {
     0% {
-        transform: scale(1.05);
+        transform: scale(1);
     }100%{
         transform: scale(1.05);
     }
 }
 
+/* footer Wilson */
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    min-height: 6%;
+    max-height: 10%;
+    background-color: rgba(244, 237, 237, 1);
+    z-index: 2;
+}
+
+.hLine{
+    height: 1px;
+    background-color: var(--color-wil);
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logo-container{
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px red solid;
+}
+
+.logo{
+    margin: 5px;
+    height: 1.2rem;
+    border: 1px red solid;
+}
+
 
 /* responsive tablet  */
+
 @media screen and (max-width: 1000px) {
     .container {
         flex-direction: column-reverse;
